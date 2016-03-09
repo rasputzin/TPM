@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TPM</title>
+		
+		
+		<!--Css-->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet">
+   
+   		<!--Js-->
+  		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+		<script src="js/jquery.scrollTo.min.js"></script>
+		<script src="js/common-scripts.js"></script>
+		<script src="js/npm.js"></script>
+   
+  </head>
+
+  <body>
+
+  <section class="has-success" id="container" >
+  
+  
+     <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Navigation"></div>
+              </div>
+          
+            <a href="index.html" class="logo"><b>TPM</b></a>
+        
+              <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="login.html">Logout</a></li>
+            	</ul>
+            </div>
+        </header>
+      <!--header end-->
+	  
+	  
+      
+      <!--SIDEBAR-->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="profile.html"><img src="img/gw2.jpg" class="img-square" width="60"></a></p>
+              	  <h5 class="centered">Gheorghe Popescu</h5>
+                   
+				   <li class="mt">
+                      <a href="translator_main.html">
+                          <i class="fa fa-dashboard"></i>
+                          <span><h4>Workspace</h4></span>
+                      </a>
+                  </li>
+                  <li class="mt">
+                      <a href="translator_profile.html">
+                          <i class="fa fa-user"></i>
+                          <span>Profile</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Invoices</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="new_translator_inv.html">New</a></li>
+                          <li><a  href="sent_translator_inv.html">Sent</a></li>
+                          <li><a  href="paid_translator_inv.html">Paid</a></li>				  
+                      </ul>
+                  </li>   
+              </ul>
+          </div>
+      </aside>
+
+      
+      <!--CONTENT-->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+		  
+		  <div class="row">
+				<div class="col-md-4">
+						<h3 class="left">Gheorghe Popescu <img src="img/jennifer_cross.jpg" class="img-circle" width="80"> </h3> 
+						<button type="upload" class="btn btn-default"input type="file" action="uploadFile"> Change photo <i class="fa fa-upload"></i></button>
+				</div>
+	      </div>	
+		   <p> </p>
+
+ 		  		  <div class="row">
+				
+	                  <div class="col-md-4">
+	                  	  <div class="content-panel">
+	                  	  	  <h4><i class="fa fa-user"></i> Personal details</h4>
+	                  	  	  <hr>
+		                      <table class="table">
+		                         <tbody>
+		                          <tr>
+		                              <td><b>Name</b></td>
+		                              <td><input class="col-md-8" placeholder="Gheorghe" /></td>
+                                  </tr>
+		                          <tr>
+		                              <td><b>Surname</b></td>
+		                              <td><input class="col-md-8" placeholder="Popescu" /></td>
+		                          </tr>
+		                          <tr>
+		                              <td><b>Email</b></td>
+		                              <td><input class="col-md-8" placeholder="ghepop@zahoo.ne" />
+		                          <tr>
+		                              <td><b>Phone no.</b></td>
+		                              <td><input class="col-md-8" placeholder="0753.076.512" />
+		                          </tr>
+		                          <tr>
+		                              <td><button type="submit" class="btn btn-default"> <a href="translator_profile.html">Save <i class="fa fa-save"></i></button></td>
+									  <td> </td>
+		                       </tbody>
+		                      </table>
+	                  	  </div>
+	                  </div>
+					
+					
+					
+		  		  <div class="row">
+					<div class="col-md-4">
+	                  	  <div class="content-panel">
+	                  	  	  <h4><i class="fa fa-book"></i> Professional details</h4>
+	                  	  	  <hr>
+		                      <table class="table">
+		                         <tbody>
+		                          <tr>
+		                              <td><b>Language pairs</b></td>
+		                              <td><button type="submit" class="btn btn-default">Edit in a new window <i class="fa fa-edit"></i></button></td>
+                                  </tr>
+		                          <tr>
+		                              <td><b>CAT tools</b></td>
+		                              <td><button type="submit" class="btn btn-default">Edit in a new window <i class="fa fa-edit"></i></button></td>
+		                          </tr>
+		                          <tr>
+		                              <td><b>Average daily rate</b></td>
+		                              <td><input class="col-md-8" placeholder="2500" />
+		                          <tr>
+		                              <td><b>Proofreading </b></td>
+		                              <td><input class="col-md-8" placeholder="N/a" />
+		                          </tr>
+		                          <tr>
+		                              <td><button type="submit" class="btn btn-default"> <a href="translator_profile.html">Save <i class="fa fa-save"></i></button></td>
+									  <td> </td>
+		                       </tbody>
+		                      </table>
+	                  	  </div>
+	                  </div>
+		</section>
+		<section class="wrapper">
+		
+					<div class="row">
+					<div class="col-md-4">
+	                  	  <div class="content-panel">
+	                  	  	  <h4><i class="fa fa-book"></i> Payment information</h4>
+	                  	  	  <hr>
+		                      <table class="table">
+		                         <tbody>
+		                          <tr>
+		                              <td><b>IBAN</b></td>
+		                              <td><input class="col-md-8" placeholder="RO25BTRL00804202148494XX" />
+                                  </tr>
+		                          <tr>
+		                              <td><b>Bank</b></td>
+		                              <td><input class="col-md-8" placeholder="BANCA TRANSILVANIA S.A. Brasov" />                             
+		                          </tr>
+		                          <tr>
+		                              <td><b>Account holder name</b></td>
+		                              <td><input class="col-md-8" placeholder="Gheorghe Popescu" />
+		                          <tr>
+		                              <td><b>Paypal </b></td>
+		                              <td><input class="col-md-8" placeholder="N/a" />
+		                          </tr>
+		                          <tr>
+		                              <td><button type="submit" class="btn btn-default"> <a href="translator_profile.html">Save <i class="fa fa-save"></i></button></td>
+									  <td> </td>
+		                       </tbody>
+		                      </table>
+	                  	  </div>
+	                  </div>
+					  
+					  					<div class="row">
+					<div class="col-md-4">
+	                  	  <div class="content-panel">
+	                  	  	  <h4><i class="fa fa-book"></i> Professional experience</h4>
+	                  	  	  <hr>
+		                      <table class="table">
+		                         <tbody>
+		                          <tr>
+		                              <td><b>Years of experience</b></td>
+		                              <td><input class="col-md-8" placeholder="N/a" />
+                                  </tr>
+		                          <tr>
+		                              <td><b>Sworn translations</b></td>
+		                              <td><input class="col-md-8" placeholder="Yes" />                                
+		                          </tr>
+		                          <tr>
+		                              <td><b>Main speciality field</b></td>
+		                              <td><input class="col-md-8" placeholder="Medical" />
+		                          <tr>
+		                              <td><b>Secondary speciality field </b></td>
+		                              <td><input class="col-md-8" placeholder="Legal" />
+		                          </tr>
+		                          <tr>
+		                              <td><button type="submit" class="btn btn-default"> <a href="translator_profile.html">Save <i class="fa fa-save"></i></button></td>
+									  <td> </td>
+		                       </tbody>
+		                      </table>
+	                  	  </div>
+	                  </div>
+	
+	
+		
+	
+		</section><! --/wrapper -->
+      </section>
+
+      <!--content end-->
+	  
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              <a href="#" class="go-top">
+                  <h2><i class="fa fa-angle-up"></i>UP</h2>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+  
+
+ 
+  </body>
+</html>
