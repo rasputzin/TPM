@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace TpmPsych;
 
+use TpmPsych\Admin\AdminPage;
 use TpmPsych\Authorization\Capabilities;
 use TpmPsych\Http\RestRouteRegistrar;
 use TpmPsych\Migrations\MigrationRunner;
@@ -43,5 +44,7 @@ final class Plugin
         add_action('rest_api_init', static function (): void {
             (new RestRouteRegistrar())->register();
         });
+
+        AdminPage::register();
     }
 }

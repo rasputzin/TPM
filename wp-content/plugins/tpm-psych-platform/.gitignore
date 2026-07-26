@@ -1,6 +1,9 @@
 /vendor/
-/node_modules/
-/build/
+/admin-app/node_modules/
 /.phpunit.cache/
 /import-data/
 .DS_Store
+
+# admin-app/dist/ e COMMIS intenționat (build compilat) — majoritatea
+# hostingurilor WordPress nu au Node.js disponibil pentru `npm run build`
+# la deploy; vezi docs/psychology-platform/13-interfata-admin.md.

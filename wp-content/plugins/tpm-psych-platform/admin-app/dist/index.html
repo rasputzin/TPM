@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPM Psych Platform — admin (dev)</title>
+    <script type="module" crossorigin src="./admin-app.js"></script>
+    <link rel="stylesheet" crossorigin href="./admin-app.css">
+  </head>
+  <body>
+    <!--
+      Doar pentru `npm run dev`/`npm run preview` în afara WordPress.
+      În producție, aceste valori vin din AdminPage::enqueue() prin
+      wp_localize_script — vezi src/Admin/AdminPage.php.
+    -->
+    <script>
+      window.tpmPsychAdmin = window.tpmPsychAdmin || { restRoot: '/wp-json', nonce: '' }
+    </script>
+    <div id="tpm-admin-root"></div>
+  </body>
+</html>

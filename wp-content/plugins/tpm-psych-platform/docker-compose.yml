@@ -1,0 +1,60 @@
+name: tpm-psych-platform-dev
+
+# Mediu LOCAL de dezvoltare/testare — NU pentru producție (parole implicite,
+# WP_DEBUG activ). Rulează pe mașina ta, nu în această sesiune sandbox.
+# Vezi docs/psychology-platform/13-interfata-admin.md pentru instrucțiuni.
+
+services:
+  db:
+    image: mariadb:10.11
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: wordpress_root
+    volumes:
+      - tpm_db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:6.7-php8.2-apache
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DEBUG: 1
+    volumes:
+      - tpm_wp_data:/var/www/html
+      - ./:/var/www/html/wp-content/plugins/tpm-psych-platform
+
+  wpcli:
+    image: wordpress:cli-php8.2
+    depends_on:
+      - db
+      - wordpress
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    volumes:
+      - tpm_wp_data:/var/www/html
+      - ./:/var/www/html/wp-content/plugins/tpm-psych-platform
+
+  # Doar utilitar, pornit la cerere: `docker compose run --rm composer install`
+  composer:
+    image: composer:2
+    working_dir: /app
+    volumes:
+      - ./:/app
+    profiles: ["tools"]
+
+volumes:
+  tpm_db_data:
+  tpm_wp_data:
