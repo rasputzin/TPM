@@ -1,10 +1,8 @@
 # Roadmap: MVP → Versiunea 1 profesională → Versiunea 2 (SaaS)
 
-Notă privind instrumentele: lista din cerința inițială (BDEFS, MCMI-3) e tratată ca referință
-pentru V1 profesională. Mențiunile ulterioare „BDRFS/BDEFS” și „LVM” din secțiunea de roadmap a
-cerinței originale sunt semnalate ca **NECESITĂ DECIZIE** (vezi README.md, punctul 2) — roadmap-ul
-de mai jos folosește BDEFS + MCMI-3 ca instrumente confirmate pentru V1 și tratează un al treilea
-instrument ca „opțional, de confirmat”.
+Notă privind instrumentele: **CONFIRMAT** — instrumentele pentru V1 profesională sunt exclusiv
+**BDEFS** și **MCMI-3**. „BDRFS” și „LVM”, menționate în formularea inițială a roadmap-ului
+cerinței, nu fac parte din scopul curent.
 
 ## MVP tehnic
 

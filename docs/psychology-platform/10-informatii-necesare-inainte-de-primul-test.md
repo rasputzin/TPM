@@ -4,12 +4,10 @@ Acest document listează exact ce trebuie să furnizezi, și prin ce fel de cana
 implementarea să atingă conținutul real al celor două instrumente. Nimic din lista de mai jos nu
 este presupus, dedus sau completat de mine.
 
-## 1. Clarificare denumire/scop (NECESITĂ DECIZIE din partea ta)
+## 1. Clarificare denumire/scop — CONFIRMAT
 
-- Confirmarea denumirii exacte și versiunii instrumentelor vizate pentru V1 profesională: BDEFS
-  (și eventual BDRFS ca instrument separat sau ca variantă a aceluiași?) + MCMI-3. Clarifică și
-  statutul lui „LVM” menționat în roadmap-ul cerinței originale — instrument suplimentar pentru
-  o versiune ulterioară, sau eroare de listare?
+- Instrumentele vizate pentru V1 profesională sunt exclusiv **BDEFS** și **MCMI-3**. „BDRFS” și
+  „LVM” nu fac parte din scopul curent.
 
 ## 2. Verificarea licenței (NECESITĂ VERIFICAREA LICENȚEI — responsabilitatea ta ca titular al drepturilor de utilizare)
 
