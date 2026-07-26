@@ -2,4 +2,5 @@
 /node_modules/
 /build/
 /.phpunit.cache/
+/import-data/
 .DS_Store
