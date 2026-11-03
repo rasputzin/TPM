@@ -5,8 +5,11 @@ tags: [jurnal, chatgpt, instructiuni]
 # Instrucțiuni pentru ChatGPT
 
 Varianta pentru ChatGPT a skill-urilor `/jurnal`, `/compacteaza` și `/handoff`
-din `.claude/skills/`. Lipește blocul de mai jos în câmpul **Instructions** al
-unui Custom GPT sau la instrucțiunile unui **Project**.
+din `.claude/skills/`. Lipește blocul de mai jos la instrucțiunile unui
+**Project** din ChatGPT (ex. proiectul „Jurnal”).
+
+> Custom GPT-urile nu mai pot fi create (ChatGPT le retrage pe 11 decembrie și
+> le înlocuiește cu „plugins”). Folosește un Project.
 
 Diferențe față de Claude Code:
 - Comenzile se scriu ca text obișnuit; ChatGPT le recunoaște din instrucțiuni.
