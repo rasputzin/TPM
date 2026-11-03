@@ -23,3 +23,4 @@ Folderul acesta poate fi deschis direct ca vault în Obsidian
    `Preia lucrul din @jurnal/handoff/ULTIMUL.md`.
 
 Skill-urile sunt definite în `.claude/skills/` și pot fi modificate oricând.
+Pentru ChatGPT, vezi [[chatgpt-instructiuni]].
